@@ -1,0 +1,6 @@
+{
+  "name": "Apex Horizon — Motorsport Racing & Telemetry",
+  "description": "High-speed pseudo-3D motorsport racing simulator and championship portal featuring custom vehicle tuning, circuit telemetry, and instant browser play.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

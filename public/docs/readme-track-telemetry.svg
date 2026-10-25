@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 290" width="100%" height="100%">
+  <rect width="1200" height="290" rx="14" fill="#0A0B0E" stroke="#222631" stroke-width="2" />
+
+  <text x="36" y="40" fill="#9CA3AF" font-family="monospace" font-size="12" font-weight="600" letter-spacing="1.5">
+    CHAMPIONSHIP CIRCUIT TELEMETRY · LASER-SCANNED GRAND PRIX RIBBONS
+  </text>
+
+  <!-- Circuit 1: Alpine Hairpin Pass -->
+  <g transform="translate(36, 62)">
+    <rect width="356" height="196" rx="10" fill="#12141A" stroke="#262B38" />
+    <text x="20" y="28" fill="#E11D48" font-family="monospace" font-size="11" font-weight="700">SWITZERLAND · TECHNICAL GRADE</text>
+    <text x="20" y="50" fill="#F3F4F6" font-family="sans-serif" font-size="20" font-weight="700">Alpine Hairpin Pass</text>
+    <path d="M 55 142 C 35 102, 65 62, 118 60 C 160 58, 165 96, 200 88 C 235 80, 255 52, 295 68 C 325 82, 315 132, 275 145 C 230 160, 200 128, 155 142 C 115 155, 75 168, 55 142 Z" fill="none" stroke="#232838" stroke-width="12" stroke-linecap="round" />
+    <path d="M 55 142 C 35 102, 65 62, 118 60 C 160 58, 165 96, 200 88 C 235 80, 255 52, 295 68 C 325 82, 315 132, 275 145 C 230 160, 200 128, 155 142 C 115 155, 75 168, 55 142 Z" fill="none" stroke="#E11D48" stroke-width="3.5" stroke-linecap="round" />
+    <circle cx="55" cy="142" r="4.5" fill="#F3F4F6" />
+    <text x="20" y="180" fill="#9CA3AF" font-family="monospace" font-size="11">4.8 KM · 14 CORNERS · Δ 310M · REC 01:18.420</text>
+  </g>
+
+  <!-- Circuit 2: Neo-Tokyo Bay Loop -->
+  <g transform="translate(422, 62)">
+    <rect width="356" height="196" rx="10" fill="#12141A" stroke="#262B38" />
+    <text x="20" y="28" fill="#38BDF8" font-family="monospace" font-size="11" font-weight="700">JAPAN · HIGH-SPEED EXPRESSWAY</text>
+    <text x="20" y="50" fill="#F3F4F6" font-family="sans-serif" font-size="20" font-weight="700">Neo-Tokyo Bay Loop</text>
+    <path d="M 52 132 L 118 68 C 145 52, 205 52, 238 68 L 302 105 C 322 122, 310 154, 275 156 L 135 156 C 92 156, 62 148, 52 132 Z" fill="none" stroke="#232838" stroke-width="12" stroke-linecap="round" />
+    <path d="M 52 132 L 118 68 C 145 52, 205 52, 238 68 L 302 105 C 322 122, 310 154, 275 156 L 135 156 C 92 156, 62 148, 52 132 Z" fill="none" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round" />
+    <circle cx="52" cy="132" r="4.5" fill="#F3F4F6" />
+    <text x="20" y="180" fill="#9CA3AF" font-family="monospace" font-size="11">5.4 KM · 11 CORNERS · Δ 85M  · REC 01:12.890</text>
+  </g>
+
+  <!-- Circuit 3: Mojave Mirage Circuit -->
+  <g transform="translate(808, 62)">
+    <rect width="356" height="196" rx="10" fill="#12141A" stroke="#262B38" />
+    <text x="20" y="28" fill="#F59E0B" font-family="monospace" font-size="11" font-weight="700">NEVADA · INTERMEDIATE CANYON</text>
+    <text x="20" y="50" fill="#F3F4F6" font-family="sans-serif" font-size="20" font-weight="700">Mojave Mirage Circuit</text>
+    <path d="M 58 138 C 46 88, 92 54, 148 62 C 192 68, 215 50, 265 60 C 315 72, 320 122, 282 146 C 245 168, 195 138, 152 150 C 108 162, 68 166, 58 138 Z" fill="none" stroke="#232838" stroke-width="12" stroke-linecap="round" />
+    <path d="M 58 138 C 46 88, 92 54, 148 62 C 192 68, 215 50, 265 60 C 315 72, 320 122, 282 146 C 245 168, 195 138, 152 150 C 108 162, 68 166, 58 138 Z" fill="none" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" />
+    <circle cx="58" cy="138" r="4.5" fill="#F3F4F6" />
+    <text x="20" y="180" fill="#9CA3AF" font-family="monospace" font-size="11">6.1 KM · 16 CORNERS · Δ 240M · REC 01:24.150</text>
+  </g>
+</svg>

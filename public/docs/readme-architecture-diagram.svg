@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <rect width="1200" height="320" rx="14" fill="#0A0B0E" stroke="#222631" stroke-width="2" />
+
+  <text x="36" y="42" fill="#9CA3AF" font-family="monospace" font-size="12" font-weight="600" letter-spacing="1.5">
+    SYSTEM ARCHITECTURE · DECOUPLED 60 HZ SIMULATION &amp; TELEMETRY PIPELINE
+  </text>
+
+  <!-- Stage 1: Dyno Configurator -->
+  <g transform="translate(36, 68)">
+    <rect width="250" height="214" rx="10" fill="#12141A" stroke="#2A3040" stroke-width="1.5" />
+    <rect x="0" y="0" width="250" height="6" rx="3" fill="#F59E0B" />
+    <text x="20" y="34" fill="#F59E0B" font-family="monospace" font-size="11" font-weight="700">01 · DYNO SETUP LAB</text>
+    <text x="20" y="58" fill="#F3F4F6" font-family="sans-serif" font-size="18" font-weight="700">Vehicle Configurator</text>
+    <text x="20" y="88" fill="#9CA3AF" font-family="monospace" font-size="12">• Aero: Low / Bal / High</text>
+    <text x="20" y="112" fill="#9CA3AF" font-family="monospace" font-size="12">• Gears: Sprint / Std / Tall</text>
+    <text x="20" y="136" fill="#9CA3AF" font-family="monospace" font-size="12">• Tires: Soft / Endurance</text>
+    <rect x="20" y="158" width="210" height="36" rx="6" fill="#0A0B0E" stroke="#222631" />
+    <text x="32" y="180" fill="#D1D5DB" font-family="monospace" font-size="11">calculateTunedSpecs()</text>
+  </g>
+
+  <!-- Connector 1 -> 2 -->
+  <g stroke="#E11D48" stroke-width="2" fill="none">
+    <line x1="286" y1="175" x2="326" y2="175" />
+    <polygon points="326,170 336,175 326,180" fill="#E11D48" stroke="none" />
+  </g>
+
+  <!-- Stage 2: Pure Physics Engine -->
+  <g transform="translate(338, 68)">
+    <rect width="265" height="214" rx="10" fill="#12141A" stroke="#E11D48" stroke-width="1.5" />
+    <rect x="0" y="0" width="265" height="6" rx="3" fill="#E11D48" />
+    <text x="20" y="34" fill="#E11D48" font-family="monospace" font-size="11" font-weight="700">02 · PURE PHYSICS CORE</text>
+    <text x="20" y="58" fill="#F3F4F6" font-family="sans-serif" font-size="18" font-weight="700">stepRaceSimulation()</text>
+    <text x="20" y="88" fill="#9CA3AF" font-family="monospace" font-size="12">• Clamped dt &lt;= 0.05s</text>
+    <text x="20" y="112" fill="#9CA3AF" font-family="monospace" font-size="12">• Slipstream Wake (+16 km/h)</text>
+    <text x="20" y="136" fill="#9CA3AF" font-family="monospace" font-size="12">• 3-Cell KERS Nitro (+42 km/h)</text>
+    <rect x="20" y="158" width="225" height="36" rx="6" fill="#0A0B0E" stroke="#222631" />
+    <text x="32" y="180" fill="#38BDF8" font-family="monospace" font-size="11">src/game/rules.ts (Tested)</text>
+  </g>
+
+  <!-- Connector 2 -> 3 -->
+  <g stroke="#38BDF8" stroke-width="2" fill="none">
+    <line x1="603" y1="175" x2="643" y2="175" />
+    <polygon points="643,170 653,175 643,180" fill="#38BDF8" stroke="none" />
+  </g>
+
+  <!-- Stage 3: Autonomous Rival AI -->
+  <g transform="translate(655, 68)">
+    <rect width="245" height="214" rx="10" fill="#12141A" stroke="#2A3040" stroke-width="1.5" />
+    <rect x="0" y="0" width="245" height="6" rx="3" fill="#38BDF8" />
+    <text x="20" y="34" fill="#38BDF8" font-family="monospace" font-size="11" font-weight="700">03 · RIVAL AI POLICIES</text>
+    <text x="20" y="58" fill="#F3F4F6" font-family="sans-serif" font-size="18" font-weight="700">updateOpponentAI()</text>
+    <text x="20" y="88" fill="#9CA3AF" font-family="monospace" font-size="12">• Blocker: Inside Line Def</text>
+    <text x="20" y="112" fill="#9CA3AF" font-family="monospace" font-size="12">• Sprinter: Straight KERS</text>
+    <text x="20" y="136" fill="#9CA3AF" font-family="monospace" font-size="12">• Drifter: Sinusoidal Arc</text>
+    <rect x="20" y="158" width="205" height="36" rx="6" fill="#0A0B0E" stroke="#222631" />
+    <text x="32" y="180" fill="#F59E0B" font-family="monospace" font-size="11">0.4s Hazard Telegraphs</text>
+  </g>
+
+  <!-- Connector 3 -> 4 -->
+  <g stroke="#10B981" stroke-width="2" fill="none">
+    <line x1="900" y1="175" x2="940" y2="175" />
+    <polygon points="940,170 950,175 940,180" fill="#10B981" stroke="none" />
+  </g>
+
+  <!-- Stage 4: Canvas2D + DOM Ref HUD + Web Audio -->
+  <g transform="translate(952, 68)">
+    <rect width="212" height="214" rx="10" fill="#12141A" stroke="#2A3040" stroke-width="1.5" />
+    <rect x="0" y="0" width="212" height="6" rx="3" fill="#10B981" />
+    <text x="18" y="34" fill="#10B981" font-family="monospace" font-size="11" font-weight="700">04 · PRESENTATION</text>
+    <text x="18" y="58" fill="#F3F4F6" font-family="sans-serif" font-size="18" font-weight="700">Canvas &amp; HUD Shell</text>
+    <text x="18" y="88" fill="#9CA3AF" font-family="monospace" font-size="12">• 36-Slice Road Proj</text>
+    <text x="18" y="112" fill="#9CA3AF" font-family="monospace" font-size="12">• 128-Particle Pool</text>
+    <text x="18" y="136" fill="#9CA3AF" font-family="monospace" font-size="12">• Web Audio Synth</text>
+    <rect x="18" y="158" width="176" height="36" rx="6" fill="#0A0B0E" stroke="#222631" />
+    <text x="28" y="180" fill="#10B981" font-family="monospace" font-size="11">Zero 60Hz setState</text>
+  </g>
+</svg>

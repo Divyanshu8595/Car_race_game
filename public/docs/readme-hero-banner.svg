@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080A0F" />
+      <stop offset="55%" stop-color="#111520" />
+      <stop offset="100%" stop-color="#090B10" />
+    </linearGradient>
+    <linearGradient id="carBody" x1="0" y1="0" x2="1" y2="0.2">
+      <stop offset="0%" stop-color="#E11D48" />
+      <stop offset="65%" stop-color="#BE123C" />
+      <stop offset="100%" stop-color="#1E2433" />
+    </linearGradient>
+    <linearGradient id="canopyGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#0A0B0E" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Canvas Background -->
+  <rect width="1200" height="380" rx="16" fill="url(#bgGrad)" stroke="#222631" stroke-width="2" />
+
+  <!-- Subtle Telemetry Grid -->
+  <g stroke="#181C26" stroke-width="1">
+    <line x1="0" y1="76" x2="1200" y2="76" />
+    <line x1="0" y1="152" x2="1200" y2="152" />
+    <line x1="0" y1="228" x2="1200" y2="228" />
+    <line x1="0" y1="304" x2="1200" y2="304" />
+    <line x1="300" y1="0" x2="300" y2="380" />
+    <line x1="600" y1="0" x2="600" y2="380" />
+    <line x1="900" y1="0" x2="900" y2="380" />
+  </g>
+
+  <!-- Left Column: Brand Lockup & Key Specs -->
+  <g transform="translate(56, 54)">
+    <polygon points="0,0 44,0 32,26 0,26" fill="#E11D48" />
+    <polygon points="52,0 72,0 60,26 40,26" fill="#F59E0B" />
+    <text x="84" y="18" fill="#9CA3AF" font-family="monospace" font-size="13" font-weight="600" letter-spacing="2">
+      FIA GT1 ENDURANCE SIMULATOR · WEB ENGINE
+    </text>
+
+    <text x="0" y="88" fill="#F3F4F6" font-family="sans-serif" font-size="56" font-weight="800" font-style="italic" letter-spacing="1">
+      APEX HORIZON
+    </text>
+    <text x="0" y="122" fill="#D1D5DB" font-family="sans-serif" font-size="17">
+      High-Speed Pseudo-3D Motorsport Simulator, Dyno Tuning Lab &amp; Championship Portal
+    </text>
+
+    <!-- Key Feature Readout Tiles -->
+    <g transform="translate(0, 154)">
+      <rect x="0" y="0" width="150" height="68" rx="8" fill="#12141A" stroke="#262B38" />
+      <text x="16" y="25" fill="#9CA3AF" font-family="monospace" font-size="11">FRAME BUDGET</text>
+      <text x="16" y="50" fill="#38BDF8" font-family="monospace" font-size="20" font-weight="700">60 HZ SIM</text>
+
+      <rect x="164" y="0" width="160" height="68" rx="8" fill="#12141A" stroke="#262B38" />
+      <text x="180" y="25" fill="#9CA3AF" font-family="monospace" font-size="11">RIVAL RACECRAFT</text>
+      <text x="180" y="50" fill="#F59E0B" font-family="monospace" font-size="20" font-weight="700">3 AI POLICIES</text>
+
+      <rect x="338" y="0" width="160" height="68" rx="8" fill="#12141A" stroke="#262B38" />
+      <text x="354" y="25" fill="#9CA3AF" font-family="monospace" font-size="11">POWERTRAIN</text>
+      <text x="354" y="50" fill="#E11D48" font-family="monospace" font-size="20" font-weight="700">KERS + AUDIO</text>
+    </g>
+
+    <text x="0" y="258" fill="#9CA3AF" font-family="monospace" font-size="12">
+      4 HOMOLOGATED GT CHASSIS  ·  3 LASER-SCANNED CIRCUITS  ·  ZERO-GC PARTICLE POOL
+    </text>
+  </g>
+
+  <!-- Right Column: GT1 Prototype Aero Silhouette & Slipstream Vectors -->
+  <g transform="translate(610, 48)">
+    <!-- Wind Tunnel Flow Lines -->
+    <path d="M 15 170 Q 170 140, 275 100 T 540 108" fill="none" stroke="#38BDF8" stroke-width="2" stroke-dasharray="10 6" stroke-opacity="0.55" />
+    <path d="M 35 200 Q 195 168, 320 132 T 550 138" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="6 6" stroke-opacity="0.45" />
+
+    <!-- Track Surface & FIA Curb -->
+    <ellipse cx="295" cy="242" rx="235" ry="18" fill="#050608" />
+    <line x1="15" y1="242" x2="555" y2="242" stroke="#E11D48" stroke-width="3" />
+    <line x1="15" y1="242" x2="555" y2="242" stroke="#F3F4F6" stroke-width="3" stroke-dasharray="24 24" />
+
+    <!-- Swan-Neck Wing & Shark Fin -->
+    <path d="M 465 138 L 508 86 L 524 86 L 492 144 Z" fill="#181C26" stroke="#4B5563" stroke-width="1.5" />
+    <path d="M 448 84 L 536 78 L 540 90 L 452 93 Z" fill="#F59E0B" />
+    <path d="M 340 96 L 475 96 L 462 140 L 355 134 Z" fill="#141720" stroke="#E11D48" stroke-width="1.2" />
+
+    <!-- GT1 Prototype Body -->
+    <path d="M 46 214 L 66 174 L 158 148 L 238 98 L 362 96 L 456 134 L 528 140 L 538 208 L 500 220 L 72 220 Z" fill="url(#carBody)" stroke="#F3F4F6" stroke-opacity="0.3" stroke-width="1.5" />
+
+    <!-- Cockpit Canopy -->
+    <path d="M 182 145 L 248 106 L 358 106 L 418 140 L 182 145 Z" fill="url(#canopyGlass)" stroke="#9CA3AF" stroke-opacity="0.45" stroke-width="1.2" />
+
+    <!-- Side Venturi Channel -->
+    <polygon points="220,164 385,156 372,200 202,200" fill="#0B0D13" stroke="#F59E0B" stroke-width="1.2" />
+    <rect x="40" y="210" width="492" height="10" rx="3" fill="#11141C" />
+
+    <!-- Headlight & Taillight -->
+    <polygon points="64,176 112,166 106,178 60,184" fill="#F8FAFC" />
+    <polygon points="512,150 534,150 536,168 514,166" fill="#38BDF8" />
+
+    <!-- Front Wheel -->
+    <g transform="translate(148, 208)">
+      <circle r="40" fill="#0B0D12" stroke="#2E3444" stroke-width="6" />
+      <circle r="27" fill="#161922" stroke="#6B7280" stroke-width="2" />
+      <circle r="18" fill="none" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6 4" />
+      <circle r="8" fill="#E11D48" />
+    </g>
+
+    <!-- Rear Wheel -->
+    <g transform="translate(432, 208)">
+      <circle r="42" fill="#0B0D12" stroke="#2E3444" stroke-width="6" />
+      <circle r="29" fill="#161922" stroke="#6B7280" stroke-width="2" />
+      <circle r="19" fill="none" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6 4" />
+      <circle r="8" fill="#E11D48" />
+    </g>
+
+    <!-- Telemetry Callout Tag -->
+    <rect x="330" y="16" width="215" height="44" rx="6" fill="#0D1017" stroke="#2A3040" />
+    <text x="344" y="34" fill="#9CA3AF" font-family="monospace" font-size="10">VALKYRIE AMR-GT1 · VK-01 EVO</text>
+    <text x="344" y="50" fill="#F3F4F6" font-family="monospace" font-size="12" font-weight="700">840 HP · 342 KM/H · 2.15 G</text>
+  </g>
+</svg>
